@@ -1,0 +1,4 @@
+@mixin borderToSize ($width-size, $relation, $border-color){
+    width: $width-size;
+    border: solid $border-color ($width-size * $relation)
+}

@@ -1,0 +1,64 @@
+$red-color: rgb(167, 0, 0);
+$green-color: rgb(0, 149, 0);
+$purple-color: rgb(228, 0, 228);
+$golden-color: rgb(228, 194, 0);
+
+
+@import 'mixins/animations';
+@import 'mixins/sizing';
+@import 'mixins/information';
+
+@import 'shared/sectionTitles';
+
+
+
+.skillsTitle {
+    @extend %section-titles;
+    @include transitionConfig(.2s);
+    @include lighthover($red-color)
+}
+
+.educationTitle {
+    @extend %section-titles;
+    @include transitionConfig(.2s);
+    @include lighthover($green-color)
+}
+
+.aboutMeTitle {
+    @extend %section-titles;
+    @include transitionConfig(.2s);
+    @include lighthover($purple-color);
+}
+
+.nav-items {
+    text-decoration: none;
+    @include lightsaber($golden-color);
+    width: 0;
+    @include transitionConfig(.2s);
+
+    &:hover {
+        width:94%;
+        padding:0px 16px 0px 0px;
+        color:black;
+    }
+}
+
+#profilePic {
+    border-radius: 100px;
+    @include borderToSize(100px, 0.1, $purple-color )
+}
+
+.educationInfo {
+    @include informationStyling($green-color)
+}
+
+.aboutMeInfo {
+    @include informationStyling($purple-color)
+}
+
+.skillsInfo {
+    @include informationStyling($red-color)
+}
+
+@import 'mediaqueries/mobile';
+

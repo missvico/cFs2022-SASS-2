@@ -1,0 +1,6 @@
+@media (max-width: 412px){
+    #profilePic {
+        border-radius: 80px;
+        @include borderToSize(80px, 0.1, $purple-color )
+    }
+}

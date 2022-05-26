@@ -1,0 +1,91 @@
+.aboutMeTitle, .educationTitle, .skillsTitle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.skillsTitle {
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+}
+.skillsTitle:hover {
+  color: #edcccc;
+  text-shadow: #a70000 0px 0px 6px, #a70000 0px 0px 10px;
+}
+
+.educationTitle {
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+}
+.educationTitle:hover {
+  color: #cceacc;
+  text-shadow: #009500 0px 0px 6px, #009500 0px 0px 10px;
+}
+
+.aboutMeTitle {
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+}
+.aboutMeTitle:hover {
+  color: #faccfa;
+  text-shadow: #e400e4 0px 0px 6px, #e400e4 0px 0px 10px;
+}
+
+.nav-items {
+  text-decoration: none;
+  background: #fcf9e6;
+  box-shadow: #e4c200 0px 0px 0px 2px;
+  width: 0;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+}
+.nav-items:hover {
+  box-shadow: #e4c200 0px 0px 20px 2px;
+  text-shadow: #e4c200 0px 0px 6px, #e4c200 0px 0px 10px;
+}
+.nav-items:hover {
+  width: 94%;
+  padding: 0px 16px 0px 0px;
+  color: black;
+}
+
+#profilePic {
+  border-radius: 100px;
+  width: 100px;
+  border: solid #e400e4 10px;
+}
+
+.educationInfo {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #009500;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.aboutMeInfo {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #e400e4;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+}
+
+.skillsInfo {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #a70000;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 16px;
+}
+
+@media (max-width: 412px) {
+  #profilePic {
+    border-radius: 80px;
+    width: 80px;
+    border: solid #e400e4 8px;
+  }
+}
